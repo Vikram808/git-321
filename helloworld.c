@@ -1,3 +1,3 @@
 hi , its git lab...
-hey,its 2 experinment
+hey,its 2 experinment from feature branch
 

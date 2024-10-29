@@ -1,0 +1,82 @@
+$ git tag v1.0 ^C
+fatal: Failed to resolve '^C' as a valid ref.
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git tag v1.0
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git tag v2.0
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git tag
+v1.0
+v2.0
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git tag v1.0 https://github.com/vaishnavi2bl23cs176/exp121.git
+fatal: Failed to resolve 'https://github.com/vaishnavi2bl23cs176/exp121.git' as a valid ref.
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git tag v1.0 f678efbf1bbc076615dce71dfc6685db9c5ccaa2
+fatal: tag 'v1.0' already exists
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git show v1.0
+commit f678efbf1bbc076615dce71dfc6685db9c5ccaa2 (HEAD -> master, tag: v2.0, tag: v1.0)
+Author: shhrushti-patil <shrushpatil517@gmail.com>
+Date:   Wed Nov 13 09:51:56 2024 +0530
+
+    Revert "revert"
+
+    This reverts commit 3d03760c29b3edd09183a203ec89bbd77a127bf5.
+
+diff --git a/1.txt b/1.txt
+index d3ff2c7..cf17d85 100644
+--- a/1.txt
++++ b/1.txt
+@@ -5,4 +5,3 @@ welcome to cse
+ iam vaishnavi
+ usn 176
+ c class
+-today is wed
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git push origin v1.0
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vaishnavi2bl23cs176/exp121.git
+ * [new tag]         v1.0 -> v1.0
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git show v2.0
+commit f678efbf1bbc076615dce71dfc6685db9c5ccaa2 (HEAD -> master, tag: v2.0, tag: v1.0)
+Author: shhrushti-patil <shrushpatil517@gmail.com>
+Date:   Wed Nov 13 09:51:56 2024 +0530
+
+    Revert "revert"
+
+    This reverts commit 3d03760c29b3edd09183a203ec89bbd77a127bf5.
+
+diff --git a/1.txt b/1.txt
+index d3ff2c7..cf17d85 100644
+--- a/1.txt
++++ b/1.txt
+@@ -5,4 +5,3 @@ welcome to cse
+ iam vaishnavi
+ usn 176
+ c class
+-today is wed
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$ git push origin v2.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vaishnavi2bl23cs176/exp121.git
+ * [new tag]         v2.0 -> v2.0
+
+BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
+$

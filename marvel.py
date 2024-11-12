@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
 $ nano 1.txt
 
@@ -233,3 +234,6 @@ Date:   Wed Nov 6 09:52:49 2024 +0530
 
 BLDEA-CSE@DESKTOP-UJJSC0E MINGW64 /d/exp9 (master)
 $
+=======
+what are you doing
+>>>>>>> bdc23fa (sick)
